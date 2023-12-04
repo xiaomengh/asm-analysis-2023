@@ -1,0 +1,25 @@
+clusters:
+    - name: C1
+      vcf: C1.norm.vcf
+    - name: C2
+      vcf: C2.norm.vcf
+    - name: C3
+      vcf: C3.norm.vcf
+
+subclones:
+    - name: normal
+      fraction: 0.04
+      clusters: []
+      defining_cluster: ""
+    - name: SC1
+      fraction: 0.05
+      clusters: [C1]
+      defining_cluster: C1
+    - name: SC2
+      fraction: 0.76
+      clusters: [C1,C2]
+      defining_cluster: C2
+    - name: SC3
+      fraction: 0.15
+      clusters: [C1,C3]
+      defining_cluster: C3

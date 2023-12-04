@@ -1,0 +1,13 @@
+clusters:
+    - name: tumor
+      vcf: strictSomatic.norm.vcf
+
+subclones:
+    - name: normal
+      fraction: 0.04
+      clusters: []
+      defining_cluster: ""
+    - name: tumor
+      fraction: 0.96
+      clusters: [tumor]
+      defining_cluster: tumor
